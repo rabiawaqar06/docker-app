@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  # Backend service (Express.js API)
+  backend:
+    build: ./backend
+    container_name: hello-backend
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+    networks:
+      - app-network
+    
+  # Frontend service (Next.js)
+  frontend:
+    build: ./frontend
+    container_name: hello-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+# Create a custom network so containers can communicate
+networks:
+  app-network:
+    driver: bridge
