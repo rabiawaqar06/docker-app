@@ -66,15 +66,15 @@ Docker/
 ## Screenshots
 
 ### Application Running
-![Frontend Interface](images/frontend-screenshot.png)
+![Frontend Interface](https://i.postimg.cc/c48CLwrL/Docker-frontend.png)
 *The beautiful frontend displaying the message from the backend*
 
 ### Docker Containers
-![Docker Containers Running](images/docker-containers.png)
+![Docker Containers Running](https://i.postimg.cc/bNQGR18x/Screenshot-from-2025-10-18-11-19-40.png)
 *Both containers running successfully with docker-compose*
 
 ### API Response
-![Backend API Response](images/api-response.png)
+![Backend API Response](https://i.postimg.cc/xjXMLkcK/docker-backend.png)
 *The raw JSON response from the backend API endpoint*
 
 ## Key Docker Concepts Demonstrated
